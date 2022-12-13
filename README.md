@@ -37,6 +37,7 @@ To fragment the file I just follow this command that I found on internet:
 To encrypt and dash the file I also found another command thought the internet using Marlin DRM, the one I used:
 
 ``` mp4dash --marlin --encryption-key=121a0fca0f1b475b8910297fa8e0a07e:a0a1a2a3a4a5a6a7a8a9aaabacadaeaf inputfile.mp4 ```
+
 There where also other encyption DRM methods like, PlayReady DRM or Widevine DRM. 
 
 ## Exercici 3:
