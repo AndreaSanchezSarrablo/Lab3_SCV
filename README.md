@@ -28,6 +28,17 @@ cd vcpkg
 
 Once I had this downloaded I tried to create a MPD video file. To do so, the file should follow the next steps: fragment it, encrypt it (type of encryptation) and finally dash it.
 
+To fragment the file I just follow this command that I found on internet: 
+
+
+``` mp4fragment [options] <input> <output> ```
+
+
+To encrypt and dash the file I also found another command thought the internet using Marlin DRM, the one I used:
+
+``` mp4dash --marlin --encryption-key=121a0fca0f1b475b8910297fa8e0a07e:a0a1a2a3a4a5a6a7a8a9aaabacadaeaf inputfile.mp4 ```
+There where also other encyption DRM methods like, PlayReady DRM or Widevine DRM. 
+
 ## Exercici 3:
 
 This exercise is done in "Exercici3.py". In this script I created a function that directlly calls the ffmpeg command able to livestream locally the input video. Then, I called the function with the 1min_cuttedVideo.mp4 video in order to live stream this video locally from my computer. In order to play the stream, we just need to introduce the following command in another terminal: ffplay rtp.//127.0.0.1:1234.
