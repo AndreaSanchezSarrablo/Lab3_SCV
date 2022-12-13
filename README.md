@@ -28,3 +28,12 @@ cd vcpkg
 
 Once I had this downloaded I tried to create a MPD video file. To do so, the file should follow the next steps: fragment it, encrypt it (type of encryptation) and finally dash it.
 
+## Exercici 3:
+
+This exercise is done in "Exercici3.py". In this script I created a function that directlly calls the ffmpeg command able to livestream locally the input video. Then, I called the function with the 1min_cuttedVideo.mp4 video in order to live stream this video locally from my computer. In order to play the stream, we just need to introduce the following command in another terminal: ffplay rtp.//127.0.0.1:1234.
+In this repository, there is also a screenshot called "LiveStreaming_1min_cuttedVideo,PNG" showing the output of the terminal when the live stream had finished.
+
+## Exercici 4:
+
+In this final exercise I opened a livestreaming show in Twitch, because is on of the most famous streaming platforms nowadays, and I tried to look for the protocols and codecs that are used there. To do so, I used Google DevTools to inspect the video that I was watching in Twitch. So I saw all the packages that can be seen in the screenshot "InspectioningNetwork.PNG" and looking more into detail we can see two types, the '.m3u8' which are the parts containing text and the '.ts' which are the parts containing the video. So, we can deduct that this video in Twitch is using HLS.
+In the screenshots "Twitch_m3u8_file.PNG" and "Twitch_ts_file.PNG" we can see the specific information of '.m3u8' and '.ts' that I mentioned before.
